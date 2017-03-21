@@ -14,9 +14,15 @@ This gem contains following libs:
 
     bundle i
 
-####HTML:
+#### HTML:
 
       <!--[if lt IE 9]>
         <%= javascript_include_tag 'crossbrowserjs' %>
       <![endif]-->
 
+or
+
+      <!--[if lt IE 9]>
+        <%= javascript_include_tag 'crossbrowserjs/html5shiv' %>
+        <%= javascript_include_tag 'crossbrowserjs/respond' %>
+      <![endif]-->
